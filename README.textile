@@ -12,6 +12,6 @@ h2. Example Session
   @=> {"spoiler":"Fredo sold Michael out. He broke his heart."}@
 
 @curl http://localhost:4567/the-crying-game@
-  @{"spoiler":"Dil - The beautiful woman is actually a man and it complicates Stephen Rea's character's feelings."}@
+  @=> {"spoiler":"Dil - The beautiful woman is actually a man and it complicates Stephen Rea's character's feelings."}@
 
 h2. Please add spoilers to @config/spoilers.yml@ and rock a pull request.
