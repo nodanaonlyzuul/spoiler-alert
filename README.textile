@@ -1,0 +1,17 @@
+h1. Spoiler Alert
+
+An open source web service (powered by sinatra) that provides spoilers to popular subjects.
+It is inspired by an unsolicited and thorough summary of *M Knight Shyamalan's* "The Devil":http://www.imdb.com/title/tt1314655/ by my boss - "Jeff Ng's":http://www.linkedin.com/in/jefficly
+
+h2. Example Session
+
+@curl http://localhost:4567/the-others@
+ @=> {"spoiler":"Nicole Kidman is the one who's actually dead. The 'ghosts' are live people in our world."}@
+
+@curl http://localhost:4567/the-godfather-2@
+  @ => {"spoiler":"Fredo sold Michael out. He broke his heart."}@
+
+@curl http://localhost:4567/the-crying-game@
+@{"spoiler":"Dil - The beautiful woman is actually a man and it complicates Stephen Rea's character's feelings."}@
+
+h2. Please add spoilers to @config/spoilers.yml@ and rock a pull request.
