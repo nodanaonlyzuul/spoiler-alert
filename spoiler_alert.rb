@@ -9,8 +9,5 @@ get '/' do
 end
 
 get '/:topic' do
-  # require 'ruby-debug'; debugger
-  # params[:topic]
-  # content_type :json
   {:spoiler => SPOILERS[params[:topic]] }.to_json
 end
