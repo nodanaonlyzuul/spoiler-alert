@@ -10,8 +10,12 @@ before do
   production? ? SPOILERS ||= YAML::load(config_file) : SPOILERS = YAML::load(config_file)
 end
 
-get '/spoilers' do
+get '/spoiler-topics' do
   SPOILERS.keys.sort.to_json
+end
+
+get '/spoilers' do
+  SPOILERS.to_json
 end
 
 get '/spoilers/:topic' do
