@@ -6,11 +6,8 @@ require 'json'
 
 # Reload spoilers in dev mode
 before do
-  if (settings.environment != :production)
-    SPOILERS = YAML::load( File.open('./config/spoilers.yml'))
-  else
-    SPOILERS ||= YAML::load( File.open('./config/spoilers.yml') )
-  end
+  config_file = File.open('./config/spoilers.yml')
+  production? ? SPOILERS ||= YAML::load(config_file) : SPOILERS = YAML::load(config_file)
 end
 
 get '/spoilers' do
