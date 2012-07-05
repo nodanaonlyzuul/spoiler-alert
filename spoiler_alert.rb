@@ -7,17 +7,17 @@ require 'json'
 # Reload spoilers in dev mode
 before do
   config_file = File.open('./config/spoilers.yml')
-  production? ? SPOILERS ||= YAML::load(config_file) : SPOILERS = YAML::load(config_file)
+  production? ? @spoilers ||= YAML::load(config_file) : @spoilers = YAML::load(config_file)
 end
 
 get '/spoiler-topics' do
-  SPOILERS.keys.sort.to_json
+  @spoilers.keys.sort.to_json
 end
 
 get '/spoilers' do
-  SPOILERS.to_json
+  @spoilers.to_json
 end
 
 get '/spoilers/:topic' do
-  {:spoiler => SPOILERS[params[:topic]] }.to_json
+  {:spoiler => @spoilers[params[:topic]] }.to_json
 end
