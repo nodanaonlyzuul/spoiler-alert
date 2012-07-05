@@ -3,7 +3,6 @@ require 'sinatra'
 require "sinatra/reloader" if development?
 require 'json'
 
-
 # Reload spoilers in dev mode
 before do
   config_file = File.open('./config/spoilers.yml')
