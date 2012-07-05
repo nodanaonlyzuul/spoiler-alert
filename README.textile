@@ -5,13 +5,13 @@ It is inspired by an unsolicited and thorough summary of *M Knight Shyamalan's* 
 
 h2. Example Session
 
-@curl http://localhost:4567/the-others@
+@curl http://localhost:4567/spoilers/the-others@
   @=> {"spoiler":"Nicole Kidman is the one who's actually dead. The 'ghosts' are live people in our world."}@
 
-@curl http://localhost:4567/the-godfather-2@
+@curl http://localhost:4567/spoilers/the-godfather-2@
   @=> {"spoiler":"Fredo sold Michael out. He broke his heart."}@
 
-@curl http://localhost:4567/the-crying-game@
+@curl http://localhost:4567/spoilers/the-crying-game@
   @=> {"spoiler":"Dil - The beautiful woman is actually a man and it complicates Stephen Rea's character's feelings."}@
 
 h2. Please add spoilers to @config/spoilers.yml@ and rock a pull request.

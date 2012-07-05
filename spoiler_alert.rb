@@ -13,10 +13,10 @@ before do
   end
 end
 
-get '/' do
+get '/spoilers' do
   SPOILERS.keys.sort.to_json
 end
 
-get '/:topic' do
+get '/spoilers/:topic' do
   {:spoiler => SPOILERS[params[:topic]] }.to_json
 end
