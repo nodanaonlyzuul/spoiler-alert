@@ -1,7 +1,9 @@
 h1. Spoiler Alert
 
 An open source web service (powered by sinatra) that provides spoilers to popular subjects.
-It is inspired by an unsolicited and thorough summary of *M Knight Shyamalan's* "The Devil":http://www.imdb.com/title/tt1314655/ by my boss - "Jeff Ng.":http://www.linkedin.com/in/jefficly
+It is inspired by an unsolicited and thorough summary of *M Knight Shyamalan's* "The Devil":http://www.imdb.com/title/tt1314655/ by - "Jeff Ng.":http://www.linkedin.com/in/jefficly
+
+For a node/express port of this see "nodanaonlyzuul/spoilers-node":https://github.com/nodanaonlyzuul/spoilers-node.
 
 h2. Example Session
 
@@ -14,4 +16,4 @@ h2. Example Session
 @curl http://localhost:4567/spoilers/the-crying-game@
   @=> {"spoiler":"Dil - The beautiful woman is actually a man and it complicates Stephen Rea's character's feelings."}@
 
-h2. Please add spoilers to @config/spoilers.yml@ and rock a pull request.
+h3. Please add spoilers to @config/spoilers.yml@ and rock a pull request.
