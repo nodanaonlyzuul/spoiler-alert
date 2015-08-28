@@ -5,7 +5,7 @@ require 'json'
 # Reload spoilers in dev mode
 before do
   config_file = File.open('./config/spoilers.yml')
-  production? ? @spoilers ||= YAML::load(config_file) : @spoilers = YAML::load(config_file)
+  settings.production? ? @spoilers ||= YAML::load(config_file) : @spoilers = YAML::load(config_file)
   content_type 'application/json', :charset => 'utf-8'
 end
 
